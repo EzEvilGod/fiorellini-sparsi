@@ -16,7 +16,8 @@ function setup()
 
 function draw()
 {
-
+    background(0,0,0);
+    fiore(x,y,d)
 }
 
 
@@ -30,5 +31,16 @@ function fiore(x,y,d)
   let y1 = y - d/2
   
   let y2 = y + d/2
+
+  circle(x1,y1,d)
+  fill("yellow")
+  circle(x2,y1,d)
+  fill("yellow")
+  circle(x1,y2,d)
+  fill("yellow")
+  circle(x2,y2,d)
+  fill("red")
+  circle(x,y,d)
+  fill("yellow")
   
 }
