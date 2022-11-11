@@ -1,3 +1,5 @@
+let w = 600
+let h = 300
 let x
 let y 
 let d
@@ -6,17 +8,17 @@ let Vy
 
 function setup() 
 {
-    x = random(400)
-    y = random(400)
+    x = random(w)
+    y = random(h)
     d = random(25,64)
     Vx = - 10
-    Vy = 20
-    createCanvas(400, 400);
+    Vy = 5
+    createCanvas(w, h);
 }
 
 function draw()
 {
-    background(0,0,0);
+    background("pink");
     fiore(x,y,d)
     x = x + Vx
     y = y + Vy
@@ -24,7 +26,7 @@ function draw()
         {
         Vx = + 1
         }
-    if(x > 400)
+    if(x > w)
         {
         Vx = - 1
         }
@@ -32,7 +34,7 @@ function draw()
         {
         Vy = + 1
         }
-    if(y > 400)
+    if(y > h)
         {
         Vy = - 1 
         }
@@ -60,5 +62,6 @@ function fiore(x,y,d)
   fill("red")
   circle(x,y,d)
   fill("yellow")
+
   
 }
