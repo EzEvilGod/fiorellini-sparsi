@@ -18,6 +18,24 @@ function draw()
 {
     background(0,0,0);
     fiore(x,y,d)
+    x = x + Vx
+    y = y + Vy
+    if(x < 0)
+        {
+        Vx = + 1
+        }
+    if(x > 400)
+        {
+        Vx = - 1
+        }
+    if(y < 0)
+        {
+        Vy = + 1
+        }
+    if(y > 400)
+        {
+        Vy = - 1 
+        }
 }
 
 
