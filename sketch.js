@@ -14,3 +14,21 @@ function setup()
     createCanvas(400, 400);
 }
 
+function draw()
+{
+
+}
+
+
+function fiore(x,y,d)
+{
+  
+  let x1 = x - d/2
+  
+  let x2 = x + d/2
+
+  let y1 = y - d/2
+  
+  let y2 = y + d/2
+  
+}
